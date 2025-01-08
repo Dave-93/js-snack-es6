@@ -56,3 +56,22 @@ function firstLetterUpper(){
 }
 firstLetterUpper();
 console.log(arrayCorrect)
+
+//todo Snack 3
+let arrayAnimals = [
+    { nome: 'leone', famiglia: 'felidi', classe: 'mammiferi' },
+    { nome: 'cane', famiglia: 'canidi', classe: 'mammiferi' },
+    { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
+    { nome: 'balena', famiglia: 'cetacei', classe:'mammiferi' },
+    { nome: 'vipera', famiglia: 'viperidi', classe: 'rettili'},
+    { nome: 'tartaruga', famiglia: 'cheloni', classe: 'rettili'},
+    { nome: 'gatto', famiglia: 'felini', classe: 'mammiferi' }
+  ]
+let arrayMammiferi =[];
+
+for(let i = 0; i < arrayAnimals.length; i++){
+    if(arrayAnimals[i].classe === 'mammiferi'){
+        arrayMammiferi.push(arrayAnimals[i]);
+    }
+}
+console.log(arrayMammiferi);
