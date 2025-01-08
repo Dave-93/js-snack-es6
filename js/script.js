@@ -75,3 +75,22 @@ for(let i = 0; i < arrayAnimals.length; i++){
     }
 }
 console.log(arrayMammiferi);
+
+//todo Snack 4
+let arrayPeople = [
+    { nome: "Marco", cognome: "Rossi", eta: 19},
+    { nome: "Sara", cognome: "Bianchi", eta: 45},
+    { nome: "Pietro", cognome: "Neri", eta: 11},
+    { nome: "Luca", cognome: "Neri", eta: 18},
+    { nome: "Anna", cognome: "Verdi", eta: 50},
+    { nome: "Sara", cognome: "Verdi", eta: 5}
+]
+
+for(let i = 0; i < arrayPeople.length; i++){
+    if(arrayPeople[i].eta >= 18){
+        arrayPeople[i].info = `${arrayPeople[i].cognome} ${arrayPeople[i].nome} è Maggiorenne, quindi può guidare!`;
+    }else{
+        arrayPeople[i].info = `${arrayPeople[i].cognome} ${arrayPeople[i].nome} è Minorenne, purtroppo non può guidare!`;
+    }
+}
+console.log(arrayPeople)
