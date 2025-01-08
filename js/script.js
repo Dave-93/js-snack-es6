@@ -38,3 +38,21 @@ for(let i = 0; i < arrayAuto.length; i++){
 console.log(arrayBenzina);
 console.log(arrayDiesel);
 console.log(arrayAlimentazioneMista);
+
+//todo Snack 2
+let arrayString = ["PippO", "PLUto", "paPERIno", "ToPoLiNo", "minnie"];
+let arrayCorrect = [];
+
+function firstLetterUpper(){
+    for(let i = 0; i < arrayString.length; i++){
+        let array = [];
+        array = arrayString[i].toLowerCase().split("");//Trasforma la parola in minuscolo e la separa in array di caratteri
+        let firstLetter = array[0].toUpperCase();//Conversione della prima lettera in maiuscolo
+        array.splice(0,1,firstLetter);//Sostituzione della prima lettera dell'array
+        array = array.join("");//Riconversione dell'array in una stringa
+        arrayCorrect.push(array);
+    }
+    return;
+}
+firstLetterUpper();
+console.log(arrayCorrect)
